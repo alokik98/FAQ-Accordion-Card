@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: linear-gradient(red, blue);
+    overflow: hidden;
+}
+
+.main-card{
+    width: 950px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 15px;
+}
+
+hr {
+    border: 0;
+    /* clear:both; */
+    display:block;
+    width: 100%;
+    background-color: grey;
+    height: 1px;
+}
+
+.rhs { 
+    max-width: 500px;
+}
+
+.back-images {
+    overflow: hidden;
+}
+
+.pattern { 
+    position: relative;
+    top: -325px;
+    left: -550px;
+    transform: rotateX(26deg);
+}
+
+.women { 
+    position: relative;
+    top: -900px;
+    left: -85px;
+}
+
+.box {
+    position: relative;
+    top: -1130px;
+    left: -93px;
+}
+
+
+.question { 
+    cursor: pointer;
+}
+
+.active, .question:hover{
+    color: orange !important;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
