@@ -1,2 +1,7 @@
-var coll = document.getElementsByClassName("question");
-var i;
+const faqs = document.querySelectorAll(".faq");
+
+faqs.forEach((faq) => {
+    faq.addEventListener("click", () => {
+        faq.classList.toggle("active");
+    });
+});

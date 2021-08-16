@@ -8,7 +8,12 @@
   
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">
+  
 
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
@@ -16,90 +21,80 @@
 <body>
   
   <div class="d-flex bg-white main-card">
-    <!-- <div class="d-inline-flex flex-wrap rhs">
-      <div class="back-images">
-        <img src="images/bg-pattern-desktop.svg" alt="background"class="pattern">
-        <img src="images/illustration-woman-online-desktop.svg" alt="desktop-pattern"class="women">
+    <div class="d-inline-flex first-part">
+      <div class="women">
+        <div>
+          <img src="images/illustration-woman-online-desktop.svg" alt="">
+        </div>
       </div>
-      <div>
-        <img src="images/illustration-box-desktop.svg" alt="box" class="box">
+      <div class="box">
+        <img src="images/illustration-box-desktop.svg" alt="">
       </div>
-    </div> -->
-    <div class="inline-flex pt-5 pe-5">
+    </div>
+    <div class="d-inline-flex flex-column p-4 second-part">
       <div class="heading">
         <span>FAQ</span>
       </div>
-      <div class="d-inline-flex content pt-4 flex-column">
-        <div class="d-flex flex-column">
-          <div class="me-5">
-            <span class="question  active">How many team members can I invite?</span>
-          </div>
-          <div>
-            <img src="images/icon-arrow-down.svg" alt="arrow">
-          </div>
-          <div class="answer">
-            <span>You can invite up to 2 additional users on the Free plan. There is no limit on 
-              team members for the Premium plan.</span>
-          </div>
+      <div class="faq">
+        <div class="d-flex question justify-content-between">
+          <span>How many team members can I invite?</span>
+          <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
         </div>
-        <hr>
-        <div class="d-flex justify-content-between flex-column">
-          <div>
-            <span class="question">What is the maximum file upload size?</span>
-          </div>
-          <div>
-            <img src="images/icon-arrow-down.svg" alt="arrow">
-          </div>
-          <div class="answer">
-            <span>No more than 2GB. All files in your account must fit your allotted storage space.</span>
-          </div>
+        <div class="answer pt-2">
+          <span>You can invite up to 2 additional users on the Free plan. There is no limit on 
+            team members for the Premium plan.</span>
         </div>
-        <hr>
-        <div class="d-flex justify-content-between flex-column">
-          <div>
-            <span class="question">How do I reset my password?</span>
-          </div>
-          <div>
-            <img src="images/icon-arrow-down.svg" alt="arrow">
-          </div>
-          <div class="answer">
-            <span>Click “Forgot password” from the login page or “Change password” from your profile page.
-              A reset link will be emailed to you.</span>
-          </div>
+      </div>
+      <div class="faq">
+        <div class="d-flex question justify-content-between">
+          <span>What is the maximum file upload size?</span>
+          <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
         </div>
-        <hr>
-        <div class="d-flex justify-content-between flex-column">
-          <div>
-            <span class="question">Can I cancel my subscription?</span>
-            <img src="images/icon-arrow-down.svg" alt="arrow">
-          </div>
-          <div class="answer">
-            <span>Yes! Send us a message and we’ll process your request no questions asked.</span>
-          </div>
+        <div class="answer pt-2">
+          <span>No more than 2GB. All files in your account must fit your allotted storage space.</span>
         </div>
-        <hr>
-        <div class="d-flex flex-column">
-          <div>
-            <span class="question me-5">Do you provide additional support?</span>
-            <img src="images/icon-arrow-down.svg" alt="arrow">
-          </div>
-          <div class="answer">
-            <span>Chat and email support is available 24/7. Phone lines are open during normal business hours.</span>
-          </div>
+      </div>
+      <div class="faq">
+        <div class="d-flex question justify-content-between">
+          <span>How do I reset my password?</span>
+          <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
         </div>
-        <hr>
+        <div class="answer pt-2">
+          <span>Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.</span>
+        </div>
+      </div>
+      <div class="faq">
+        <div class="d-flex question justify-content-between">
+          <span>Can I cancel my subscription?</span>
+          <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+        </div>
+        <div class="answer pt-2">
+          <span>Yes! Send us a message and we’ll process your request no questions asked.</span>
+        </div>
+      </div>
+      <div class="faq">
+        <div class="d-flex question justify-content-between">
+          <span>Do you provide additional support?</span>
+          <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+        </div>
+        <div class="answer pt-2">
+          <span>Chat and email support is available 24/7. Phone lines are open during normal business hours.</span>
+        </div>
       </div>
     </div>
   </div>
+<!--   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
   
   
 
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
 </body>
 </html>
 
